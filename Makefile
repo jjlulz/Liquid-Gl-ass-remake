@@ -4,9 +4,9 @@ INSTALL_TARGET_PROCESSES = SpringBoard
 
 include $(THEOS)/makefiles/common.mk
 
-TWEAK_NAME = CC26
-CC26_FILES = Tweak.xm
-CC26_CFLAGS = -fobjc-arc
-CC26_FRAMEWORKS = UIKit QuartzCore
+TWEAK_NAME = LiquidGlass
+LiquidGlass_FILES = Tweak.xm
+LiquidGlass_CFLAGS = -fobjc-arc
+LiquidGlass_FRAMEWORKS = UIKit QuartzCore
 
 include $(THEOS_MAKE_PATH)/tweak.mk
