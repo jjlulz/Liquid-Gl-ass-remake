@@ -58,6 +58,7 @@ static void applyGlass(UIView *v, CGFloat radius) {
 %hook CCUIRoundButton
 - (void)layoutSubviews {
     %orig;
+    self.layer.cornerRadius = MIN(self.bounds.size.width, self.bounds.size.height) / 2.0;
     self.layer.borderWidth = 0.8;
     self.layer.borderColor = [UIColor colorWithWhite:1 alpha:0.4].CGColor;
 }
